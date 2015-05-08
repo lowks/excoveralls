@@ -3,4 +3,4 @@ env:
   - MIX_ENV=test
 otp_release:
   - 17.1
-script: "mix do compile, coveralls.travis"
+after_success: "mix do compile, coveralls.travis"
